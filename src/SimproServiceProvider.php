@@ -12,7 +12,7 @@ class SimproServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('laravel-simpro')
-            ->hasConfigFile()
+            ->hasConfigFile('simpro')
             ->hasViews()
             ->hasMigration('create_laravel-simpro_table')
             ->hasCommand(SimproCommand::class);
