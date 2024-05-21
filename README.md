@@ -3,57 +3,13 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/stitch-digital/laravel-simpro.svg?style=flat-square)](https://packagist.org/packages/stitch-digital/laravel-simpro)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/stitch-digital/laravel-simpro/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/stitch-digital/laravel-simpro/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/stitch-digital/laravel-simpro/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/stitch-digital/laravel-simpro/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/stitch-digital/laravel-simpro.svg?style=flat-square)](https://packagist.org/packages/stitch-digital/laravel-simpro)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Laravel Simpro is a robust package designed to seamlessly integrate your Laravel application with the Simpro API. This package simplifies the process of connecting to the Simpro API, allowing you to focus on building your application's core features without worrying about the underlying API complexities.
 
-## Installation
+Check out the full documentation for this package at: [https://stitch-digital.github.io/laravel-simpro/](https://stitch-digital.github.io/laravel-simpro/).
 
-You can install the package via composer:
-
-```bash
-composer require stitch-digital/laravel-simpro
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-simpro-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-simpro-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-simpro-views"
-```
-
-## Usage
-
-```php
-$simpro = new StitchDigital\Simpro();
-echo $simpro->echoPhrase('Hello, StitchDigital!');
-```
-
-## Testing
-
-```bash
-composer test
-```
+The full Simpro API documentation can be [found here](https://developer.simprogroup.com/apidoc/).
 
 ## Changelog
 
@@ -61,11 +17,18 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+Contributions are welcome and will be fully credited.
+
+Contributions are accepted via Pull Requests on [Github](https://github.com/stitch-digital/laravel-simpro).
+
+## Making Pull Requests
+
+- **One pull request per feature** - If you are looking to work on multiple things, please submit multiple pull requests.
+- **Update documentation** - Our documentation is located in the /docs directory. Please ensure that if you are making a change that you also review the documentation and include revisions to the docs in your pull request.
 
 ## Security Vulnerabilities
 
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+If you discover any security related issues, please email [support@stitch-digital.co](mailto:support@stitch-digital.co) instead of using the issue tracker.
 
 ## Credits
 
