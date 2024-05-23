@@ -4,7 +4,7 @@ namespace StitchDigital\Simpro;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use StitchDigital\Simpro\Commands\SimproCommand;
+use StitchDigital\Simpro\Commands\SimproInstall;
 
 class SimproServiceProvider extends PackageServiceProvider
 {
@@ -14,7 +14,7 @@ class SimproServiceProvider extends PackageServiceProvider
             ->name('laravel-simpro')
             ->hasConfigFile('simpro')
             ->hasViews()
-            ->hasMigration('create_laravel-simpro_table')
-            ->hasCommand(SimproCommand::class);
+            ->hasMigration('create_simpro_credentials_table')
+            ->hasCommand(SimproInstall::class);
     }
 }
