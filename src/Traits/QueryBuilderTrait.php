@@ -63,11 +63,12 @@ trait QueryBuilderTrait
     public function where(string $field, string $value, string $operator = '='): static
     {
         if ($operator === 'like') {
-            // Append %25 for wildcard search
-            $value = $value . '%25';
+            // Append % for wildcard search
+            $value = $value . '%';
         }
 
-        $this->queryParams[$field] = $operator === '=' ? $value : "$operator($value)";
+        $this->queryParams[$field] = $value;
+
         return $this;
     }
 

@@ -4,7 +4,7 @@ namespace StitchDigital\Simpro\Commands;
 
 use Illuminate\Console\Command;
 
-class SimproCommand extends Command
+class SimproInstall extends Command
 {
     public $signature = 'laravel-simpro';
 
